@@ -4,6 +4,10 @@ import aguaclara.core.pipes as pipe
 
 import numpy as np
 
+class SedimentationTank:
+    def __init__(self):
+        pass
+
 PLANT_FLOOR_THICKNESS = 0.2 * u.m  # plant floor slab thickness
 WALL_THICKNESS = 0.15 * u.m  # thickness of sed tank dividing wall
 HL_OUTLET_MAN = 4 * u.cm  # head loss through the outlet manifold

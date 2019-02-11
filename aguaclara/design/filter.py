@@ -1,5 +1,9 @@
 from aguaclara.core.units import unit_registry as u
 
+class Filter:
+    def __init__(self):
+        pass
+
 #Design guidelines say 11 mm/s. The success of lab-scale backwashing at
 # 10 mm/s suggests that this is a reasonable and conservative value
 BACKWASH_VEL = 11 * u.mm / u.s

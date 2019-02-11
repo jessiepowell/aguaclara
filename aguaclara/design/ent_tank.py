@@ -1,5 +1,9 @@
 from aguaclara.core.units import unit_registry as u
 
+class EntranceTank:
+    def __init__(self):
+        pass
+
 L_MAX = 2.2 * u.m
 
 # Angle of the sloped walls of the entrance tank hoppers

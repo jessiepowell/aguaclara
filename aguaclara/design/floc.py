@@ -112,7 +112,7 @@ class Flocculator:
     )
 
     def __init__(self, q=20 * u.L/u.s, temp=25 * u.degC,
-                 sed_tank_l_max=6 * u.m):
+                 floc_l_max=6 * u.m):
         """Instantiate a Flocculator object, representing a real flocculator
         component.
 
@@ -120,15 +120,15 @@ class Flocculator:
         :type q: float * u.L/u.s
         :param temp: Water temperature of the flocculator.
         :type temp: float * u.degC
-        :param sed_tank_l_max: Maximum length of the sedimentation tank, used
+        :param floc_l_max: Maximum length of the sedimentation tank, used
         to calculate the length of the adjacent flocculator.
-        :type sed_tank_l_max: float * u.m
+        :type floc_l_max: float * u.m
         :returns: object
         :rtype: Flocculator
         """
         self.q = q
         self.temp = temp
-        self.sed_tank_l_max = sed_tank_l_max
+        self.sed_tank_l_max = floc_l_max
 
     @property
     def vel_grad_avg(self):
