@@ -204,6 +204,35 @@ DIFFUSER_ND = 1*u.inch
 
 JET_REVERSER_ND = 3*u.inch
 
+THICKNESS_WALL = 0.15*u.m
+
+PLATE_SETTLERS_ANGLE = 60*u.deg
+
+PLATE_SETTLERS_S = 2.5*u.cm
+
+PLATE_SETTLERS_THICKNESS = 2*u.mm
+
+PLATE_SETTLERS_L_CANTILEVERED = 20*u.cm
+
+TANK _W = 42*u.inch
+
+TANK _L = 5.8*u.m
+
+TANK_VEL_UP = 1*u.mm/u.s
+
+MANIFOLD_RATIO_Q_MAN_ORIFICE = 0.8
+
+MANIFOLD_DIFFUSER_THICKNESS_WALL = 1.17*u.inch
+
+MANIFOLD_DIFFUSER_VEL_MAX = 442.9*u.mm/u.s
+
+MANIFOLD_DIFFUSER_A = 0.419*u.inch**2
+
+MANIFOLD_EXIT_MAN_HL_ORIFICE = 4*u.cm
+
+MANIFOLD_EXIT_MAN_N_ORIFICES = 58
+
+
 """This file contains all the functions needed to design a sedimentation tank
 for an AguaClara plant.
 Attributes
@@ -266,7 +295,7 @@ manifold : dict
 from aide_design.play import*
 
 # again we will change this to an important statment from the URL of  aide_template repo
-sed_dict = {
+"""sed_dict = {
             'thickness_wall': 0.15*u.m,
             'plate_settlers': {
                 'angle': 60*u.deg, 'S': 2.5*u.cm,
@@ -286,7 +315,7 @@ sed_dict = {
                 }
             }
 }
-
+"""
 @u.wraps(None, [None], False)
 def n_sed_plates_max(sed_inputs=sed_dict):
     """Return the maximum possible number of plate settlers in a module given
