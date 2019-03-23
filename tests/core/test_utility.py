@@ -12,5 +12,4 @@ class UtilityTest(unittest.TestCase):
         self.assertAlmostEqual(ut.round_sf(0, 4), 0)
         self.assertAlmostEqual(ut.round_sf(0 * u.m, 4), 0 * u.m)
 
-    def test_max_min(self):
-        self.assertAlmosEquals(ut.max())
+ 
