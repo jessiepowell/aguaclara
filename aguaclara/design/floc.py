@@ -14,6 +14,11 @@ from aguaclara.core.units import unit_registry as u
 
 import numpy as np
 
+from onshape_client.onshape_url import ConfiguredOnshapeElement
+from onshape_client.units import u
+url = "https://cad.onshape.com/documents/b4cfd328713460beeb3125ac/w/3928b5c91bb0a0be7858d99e/e/6f2eeada21e494cebb49515f"
+element = ConfiguredOnshapeElement(url)
+
 # Ratio of the width of the gap between the baffle and the wall and the spacing
 # between the baffles.
 BAFFLE_RATIO = 1
