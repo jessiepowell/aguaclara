@@ -149,3 +149,22 @@ SAND_POROSITY = 0.4
 SAND_DENSITY = 2650 * u.kg / (u.m ** 3)
 
 FLUIDIZED_RATIO = 1.3 #Bed expands 30% when fluidized
+
+class Filter:
+
+    def __init__(self, flow_rate = 20 *u.L/u.s, sand_layer_thickness = 20 *u.cm,
+                 nbackwash_manifold_diameter = 4 * u.in, max_filtration_head_loss * 30 u.cm):
+        self.flow_rate = flow_rate
+        self.sand_layer_thickness = sand_layer_thickness
+        self.nbackwash_manifold_diameter = nbackwash_manifold_diameter
+        self.max_filtration_head_loss = max_filtration_head_loss
+
+    def num_tanks():
+
+    def flow_rate_per_tank)():
+
+    def filt_vel():
+
+    def backwash_vel():
+
+    def backwash_manifold_diameter()
