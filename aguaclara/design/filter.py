@@ -159,12 +159,12 @@ class Filter:
         self.nbackwash_manifold_diameter = nbackwash_manifold_diameter
         self.max_filtration_head_loss = max_filtration_head_loss
 
-    def num_tanks():
+    #def num_tanks():
 
-    def flow_rate_per_tank)():
+    #def flow_rate_per_tank)():
 
-    def filt_vel():
+    #def filt_vel():
 
-    def backwash_vel():
+    #def backwash_vel():
 
-    def backwash_manifold_diameter()
+    #def backwash_manifold_diameter():
